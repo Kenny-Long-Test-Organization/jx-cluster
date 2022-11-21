@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        Kenny-Long-Test-Organization/aspnet-quickstart-test: true
         Kenny-Long-Test-Organization/jx-cluster: true
         kennethlong/ps-jx-java-quickstart: true
     plank: {}
@@ -20,6 +21,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        Kenny-Long-Test-Organization/aspnet-quickstart-test: merge
         Kenny-Long-Test-Organization/jx-cluster: merge
         kennethlong/ps-jx-java-quickstart: merge
       queries:
@@ -34,6 +36,7 @@ data:
         repos:
         - Kenny-Long-Test-Organization/jx-cluster
         - kennethlong/ps-jx-java-quickstart
+        - Kenny-Long-Test-Organization/aspnet-quickstart-test
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - Kenny-Long-Test-Organization/jx-cluster
         - kennethlong/ps-jx-java-quickstart
+        - Kenny-Long-Test-Organization/aspnet-quickstart-test
       target_url: http://lighthouse-jx.34.28.222.10.nip.io/merge/status
 kind: ConfigMap
 metadata:
