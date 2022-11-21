@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: Kenny-Long-Test-Organization
+    provider: github
+    repository: aspnet-quickstart-test
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: kenny-long-test-organization-aspnet-quickstart-test
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/Kenny-Long-Test-Organization/aspnet-quickstart-test.git
+  org: Kenny-Long-Test-Organization
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: aspnet-quickstart-test
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/Kenny-Long-Test-Organization/aspnet-quickstart-test
