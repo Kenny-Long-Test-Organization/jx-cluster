@@ -8,10 +8,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - kennethlong/ps-jx-java-quickstart
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - Kenny-Long-Test-Organization/aspnet-quickstart-test
       require_self_approval: true
     cat: {}
@@ -30,11 +26,6 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       Kenny-Long-Test-Organization/jx-cluster:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
-        name: lighthouse-webui-plugin
-      kennethlong/ps-jx-java-quickstart:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -73,20 +64,6 @@ data:
       - cat
       - dog
       - pony
-      kennethlong/ps-jx-java-quickstart:
-      - approve
-      - assign
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - cat
-      - dog
-      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -98,9 +75,6 @@ data:
     triggers:
     - repos:
       - Kenny-Long-Test-Organization/jx-cluster
-      trusted_org: todo
-    - repos:
-      - kennethlong/ps-jx-java-quickstart
       trusted_org: todo
     - repos:
       - Kenny-Long-Test-Organization/aspnet-quickstart-test
