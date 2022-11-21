@@ -5,27 +5,50 @@ spec:
     enabled: false
     schedule: ""
   cluster:
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    clusterName: jenkins-x-cluster
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
     gitKind: github
     gitName: github
     gitServer: https://github.com
+    gke:
+      projectNumber: "127852447795"
+    project: driven-reef-369119
     provider: gke
     registry: gcr.io
+    zone: us-central1-a
   environments:
   - key: dev
+    owner: Kenny-Long-Test-Organization
+    repository: jx-cluster
   - key: staging
   - key: production
   ingress:
     domain: ""
-    externalDNS: false
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
-      production: false
+      production: true
+  pipelineUser:
+    username: kenneth-alan-long
   repository: nexus
   secretStorage: vault
-  vault: {}
+  storage:
+  - name: logs
+    url: gs://logs-jenkins-x-cluster-a39eb3a4b44c
+  - name: reports
+    url: gs://reports-jenkins-x-cluster-a39eb3a4b44c
+  - name: repository
+    url: gs://repository-jenkins-x-cluster-a39eb3a4b44c
+  terraformVault: true
+  vault:
+    bucket: vault-jenkins-x-cluster-a39eb3a4b44c
+    key: crypto-key-jenkins-x-cluster-a39eb3a4b44c
+    keyring: keyring-jenkins-x-cluster-a39eb3a4b44c
+    name: jenkins-x-cluster
+    serviceAccount: jenkins-x-cluster-vt
   webhook: lighthouse
