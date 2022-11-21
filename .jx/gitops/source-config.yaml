@@ -10,6 +10,12 @@ spec:
     repositories:
     - name: ps-jx-java-quickstart
     scheduler: in-repo
+  - owner: Kenny-Long-Test-Organization
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: aspnet-quickstart-test
+    scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
