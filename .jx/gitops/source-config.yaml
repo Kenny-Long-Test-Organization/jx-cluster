@@ -4,12 +4,6 @@ metadata:
   creationTimestamp: null
 spec:
   groups:
-  - owner: kennethlong
-    provider: https://github.com
-    providerKind: github
-    repositories:
-    - name: ps-jx-java-quickstart
-    scheduler: in-repo
   - owner: Kenny-Long-Test-Organization
     provider: https://github.com
     providerKind: github
