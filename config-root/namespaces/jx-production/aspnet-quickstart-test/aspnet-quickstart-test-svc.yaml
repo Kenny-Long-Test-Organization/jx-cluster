@@ -1,0 +1,20 @@
+# Source: aspnet-quickstart-test/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: aspnet-quickstart-test
+  labels:
+    chart: "aspnet-quickstart-test-0.0.1"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'aspnet-quickstart-test'
+  namespace: jx-production
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+    name: http
+  selector:
+    app: aspnet-quickstart-test-aspnet-quickstart-test
