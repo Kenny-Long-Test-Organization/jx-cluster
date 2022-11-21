@@ -1,0 +1,10 @@
+# Source: aspnet-quickstart-test/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: aspnet-quickstart-test-aspnet-quickstart-test
+  annotations:
+    meta.helm.sh/release-name: 'aspnet-quickstart-test'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
