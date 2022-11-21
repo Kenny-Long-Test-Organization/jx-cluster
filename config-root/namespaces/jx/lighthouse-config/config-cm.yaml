@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - Kenny-Long-Test-Organization/jx-cluster
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.34.28.222.10.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
